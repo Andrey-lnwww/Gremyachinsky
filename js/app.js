@@ -3895,7 +3895,7 @@
                 breakpoint.addEventListener("change", checker);
                 checker();
             };
-            resizableSwiper("(max-width: 992px)", ".products__slider", {
+            resizableSwiper("(max-width: 992px)", ".production__slider", {
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
@@ -3908,8 +3908,8 @@
                 lazy: true,
                 watchOverflow: true,
                 navigation: {
-                    prevEl: ".products__nav-prev",
-                    nextEl: ".products__nav-next"
+                    prevEl: ".production__nav-prev",
+                    nextEl: ".production__nav-next"
                 }
             });
             resizableSwiper("(max-width: 992px)", ".news__slider", {
