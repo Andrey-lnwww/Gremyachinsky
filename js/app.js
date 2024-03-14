@@ -504,12 +504,20 @@
             }
         };
         function menuInit() {
-            if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
-                if (bodyLockStatus && e.target.closest(".icon-menu")) {
-                    bodyLockToggle();
-                    document.documentElement.classList.toggle("menu-open");
-                }
-            }));
+            if (document.querySelector(".icon-menu")) {
+                document.addEventListener("click", (function(e) {
+                    if (bodyLockStatus && e.target.closest(".icon-menu")) {
+                        bodyLockToggle();
+                        document.documentElement.classList.toggle("menu-open");
+                    }
+                }));
+                const menuLinks = document.querySelectorAll(".menu__link");
+                if (menuLinks && window.innerWidth <= 992) menuLinks.forEach((i => {
+                    i.addEventListener("click", (e => {
+                        menuClose();
+                    }));
+                }));
+            }
         }
         function menuClose() {
             bodyUnlock();
