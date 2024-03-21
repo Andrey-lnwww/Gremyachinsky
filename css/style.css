@@ -1720,7 +1720,7 @@ html {
 }
 
 .no-webp .cooperation__wrapper{
-  background: url("../img/cooperation.jpg") 0 0 no-repeat; }
+  background-image: url("../img/cooperation.jpg"); }
 
 .cooperation__wrapper {
   background-position: 50%;
@@ -2876,6 +2876,6 @@ html {
 
 .webp .banner__wrapper{ background-image: url(../img/banner.webp); }
 
-.webp .cooperation__wrapper{ background: url(../img/cooperation.webp) 0 0 no-repeat; }
+.webp .cooperation__wrapper{ background-image: url(../img/cooperation.webp); }
 
 .webp .support__wrapper{ background-image: url(../img/support.webp); }
